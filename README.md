@@ -81,19 +81,19 @@ interface g0/1
 ```bash
 interface g0/0.10
  encapsulation dot1Q 10
- ip address 192.168.10.1 255.255.255.0
+ ip address 192.168.10.1 255.255.255.252
 
 interface g0/0.20
  encapsulation dot1Q 20
- ip address 192.168.20.1 255.255.255.0
+ ip address 192.168.10.9 255.255.255.252
 
 interface g0/0.30
  encapsulation dot1Q 30
- ip address 192.168.30.1 255.255.255.0
+ ip address 192.168.10.17 255.255.255.252
 
 interface g0/0.40
  encapsulation dot1Q 40
- ip address 192.168.40.1 255.255.255.0
+ ip address 192.168.10.25 255.255.255.252
 ```
 
 ---
@@ -102,8 +102,8 @@ interface g0/0.40
 
 ```bash
 router ospf 1
- network 192.168.10.0 0.0.0.255 area 0
- network 10.0.0.0 0.0.0.3 area 0
+ network 192.168.10.0 0.0.0.3 area 0
+ network 192.168.10.8 0.0.0.3 area 0
 ```
 
 ---
