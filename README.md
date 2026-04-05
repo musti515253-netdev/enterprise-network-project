@@ -35,7 +35,7 @@ This project demonstrates a real-world enterprise network designed using multipl
 
 ## 🖼️ Topology Diagram
 
-![Topology](topology.png)
+![Topology](Topology.png)
 
 ---
 
